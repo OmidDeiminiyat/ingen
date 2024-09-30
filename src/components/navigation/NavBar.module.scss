@@ -1,0 +1,52 @@
+@import './../../helper/colors.scss';
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(246, 243, 243, 1);
+  }
+.mainNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 9px 0 9px 0;
+    max-height: 20px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.09);
+    background-color: rgba(255, 255, 255, 1);
+
+    hgroup{
+        padding-left: 21px;
+        h1{
+            color: $red;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 0;
+    padding: 0;
+        li{
+            list-style: none;
+            padding: 5px;
+            &:not(:last-child)::after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 130%; 
+                background-color: #000;
+                margin-left: 5px;
+              }
+        }
+    }
+    div{
+        .MyIcone{
+            color: $red;
+            padding: 0 12px 0 12px;
+        }
+       
+    }
+
+}
