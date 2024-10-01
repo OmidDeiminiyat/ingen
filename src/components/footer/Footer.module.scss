@@ -1,7 +1,33 @@
+@import './../../helper/colors.scss';
+@import './../../helper/colors.scss';
 .footer{
-    ul{
-        li{
-            list-style: none;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+    section{
+        width: 80%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media(max-width:600px) {
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin-left: 0;
+        }
+        ul{
+            li{
+                list-style: none;
+                font-family: "Roboto Flex", sans-serif;
+                font-size: 1vw;
+                font-weight: 400;
+                color: $foot;
+                a{
+                font-family: "Roboto Flex", sans-serif;
+                font-size: 1vw;
+                color: $foot;
+                text-decoration: none;
+                }
+            }
         }
     }
+    
     }

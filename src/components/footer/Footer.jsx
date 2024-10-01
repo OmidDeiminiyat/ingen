@@ -19,17 +19,39 @@ export function Footer(){
     return(
         <>
             <footer className={style.footer}>
-                <ul>
-                    <li>
-                        <NavLink to="/Login" className={({isActive}) => isActive ? style.active : '' }>  </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/" className={({isActive}) => isActive ? style.active : '' }  >  </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/" className={({isActive}) => isActive ? style.active : 'test' }  >  </NavLink>
-                    </li>
-                </ul>
+                <section>
+                    <ul>
+                        <h5>Adresse:</h5>
+                        <li>Intet nyt -Godt nyt ApS</li>
+                        <li>Tulipanvej 232 <br />7320 <br />Valby Øster</li>
+                    </ul>
+                    <ul>
+                        <h5>Links</h5>
+                        <li>vikanweb.dk</li>
+                        <li>overpådenandenside.dk</li>
+                        <li>retsinformation.dk</li>
+                        <li>nogetmednews.dk</li>
+                    </ul>
+                    <ul>
+                        <h5>Politik</h5>
+                        <li>
+                            <NavLink to="/Login" className={({isActive}) => isActive ? style.active : 'login' }> Privatlivspolitik </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/" className={({isActive}) => isActive ? style.active : '' }  > Cookiepolitik  </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/" className={({isActive}) => isActive ? style.active : 'test' }  > Købsinformation </NavLink>
+                        </li>
+                        <li>Delingspolitik</li>
+                    </ul>
+                    <ul>
+                        <h5>Kontakt</h5>
+                        <li>ingen@nyhed.dk</li>
+                        <li>Telefon: 23232323</li>
+                        <li>Fax: 123123-333</li>
+                    </ul>
+                </section>
             </footer>
         </>
     );

@@ -4,6 +4,10 @@
     width: 80%;
     margin-left: 10%;
     background-color: rgba(255, 255, 255, 1);
+    @media(max-width:600px) {
+        width: 100%;
+        margin-left: 0;
+    }
 
     div{
         article{
@@ -11,11 +15,14 @@
                 font-family: "Roboto Flex", sans-serif;
                 font-weight: 400;
                 padding: 21px 0 0 21px;
+                font-size: 3vw;
+            
             }
             p{
                 font-family: "Roboto Flex", sans-serif;
                 font-weight: 16;
                 padding: 0 0 0 21px;
+                font-size: 1.5vw;
             }
             .times{
                 color: $red;
@@ -24,12 +31,16 @@
             a{
                 text-decoration: none;
                 color: $link;
-                font-size: 14px;
+                font-size: 1.5vw;
                 padding: 0 0 21px 21px;
+               
             }
             img{
                 width: 100%;
                 margin-top: 15px;
+                @media(max-width:600px) {
+                    width: 100%;
+                }
             }
         }
     }
@@ -39,14 +50,19 @@
     width: 80%;
     margin-left: 10%;
     background-color: rgba(246, 243, 243, 1);
-    border: 1px solid green;
+    @media(max-width:600px) {
+            width: 100%;
+            margin-left: 0;        
+    }
 
     .secondSection{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         max-height: 700px;
-        
+        @media(max-width:600px) {
+            grid-template-columns: 1fr;
+        }
 
     article{
        max-width: 100%;
@@ -54,9 +70,37 @@
        img{
         width: 100%;
        }
+       h3{
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 400;
+        padding: 0 0 0 21px;
+        @media(max-width:600px){
+            font-size: 3vw;
+        }
+    }
+    p{
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 16;
+        padding: 0 0 0 21px;
+    }
+    .times{
+        color: $red;
+        padding: 0 0 0 21px;
+        @media(max-width:600px) {
+            font-size: 1.5vw;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $link;
+        font-size: 14px;
+        padding: 0 0 21px 21px;
+        @media(max-width:600px) {
+            font-size: 1.5vw;
+        }
+    }
         &:nth-child(1){
             height: 450px;
-            border: 1px solid orange;
             img{
                 width: 100%;
                 height: 340px;
@@ -64,7 +108,6 @@
         }
         &:nth-child(3){
             height: 230px;
-            border: 1px solid red;
             img{
                max-height: 120px;
             }
@@ -86,4 +129,109 @@
        
     }
     }
+}
+
+.thirdMain{
+    margin-top: 12px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgba(246, 243, 243, 1);
+    @media(max-width:600px) {
+        width: 100%;
+        margin-left: 0;
+    }
+    .secondSection{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-height: 312px;
+        min-height: 312px;
+        article{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            background-color: rgba(255, 255, 255, 1);
+            @media(max-width:600px) {
+                grid-template-columns: 1fr;
+            }
+            img{
+                width: 100%;
+                max-height: 312px;
+                min-height: 312px;
+            }
+            h3{
+                font-family: "Roboto Flex", sans-serif;
+                font-weight: 400;
+                padding: 0 0 0 21px;
+            }
+            p{
+                font-family: "Roboto Flex", sans-serif;
+                font-weight: 16;
+                padding: 0 0 0 21px;
+            }
+            .times{
+                color: $red;
+                padding: 0 0 0 21px;
+            }
+            a{
+                text-decoration: none;
+                color: $link;
+                font-size: 14px;
+                padding: 0 0 21px 21px;
+            }
+        }
+    }
+}
+.forthMain {
+    margin-top: 12px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgba(246, 243, 243, 1);
+    @media(max-width:600px) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .secondSection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-height: 312px;
+        min-height: 312px;
+        @media(max-width:600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    article{
+        background-color: rgba(255, 255, 255, 1);
+        img{
+            width: 100%;
+            max-height: 200px;
+        }
+        h3{
+            font-family: "Roboto Flex", sans-serif;
+            font-weight: 400;
+            padding: 0 0 0 21px;
+        }
+        p{
+            font-family: "Roboto Flex", sans-serif;
+            font-weight: 16;
+            padding: 0 0 0 21px;
+        }
+        .times{
+            color: $red;
+            padding: 0 0 0 21px;
+        }
+        a{
+            text-decoration: none;
+            color: $link;
+            font-size: 14px;
+            padding: 0 0 21px 21px;
+        }
+    }
+}
+
+.MyIcone {
+    position: absolute;
+    left: 89%;
 }

@@ -1,0 +1,32 @@
+@import './../helper/fonts.scss';
+@import './../helper/colors.scss';
+.singleArticle {
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgba(255, 255, 255, 1);
+    img{
+        width: 100%;
+        max-height: 453px;
+    }
+    h3{
+        margin-left: 12px;
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .Data{
+        color: $red;
+        margin-left: 12px;
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .mainText{
+        width: 60%;
+        margin-left: 20%;
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+}
